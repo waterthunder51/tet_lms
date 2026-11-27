@@ -1,0 +1,217 @@
+
+.center {
+    text-align: center;
+}
+/* .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-image: linear-gradient(to top left,#fffc4a,#47ffe6);
+} */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Bootstrap-icons';
+    /* background-image: linear-gradient(to top left,#fffc4a,#47ffe6); */
+    /* font-size: 16px; */
+}
+
+/* html {
+        background-color: rgba(0,0,0,.8);
+        background-image: linear-gradient(to top left,#4C0085,#000080);
+    } */
+
+
+#licence table,#licence td,#licence th {
+    border: 0px solid #aaaaaa;
+    border-collapse: collapse;
+    padding: 5px;
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;         /*置中對齊*/
+}
+    /* table凍結表頭 */
+    /* table {
+        table-layout: fixed;
+        width: 100%;
+    } */
+    /* 第一列背景色 */
+    #licence tbody tr:nth-child(odd) td {
+        background-color: rgb(255, 245, 200);
+    }
+
+    /* 第二列背景色 */
+    #licence tbody tr:nth-child(even) td {
+        background-color: rgb(255, 215, 0);
+    }
+
+
+
+#licence tr th {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+#licence,#licence tr {
+    width: 100%;
+}
+#licence thead,#licence th {
+    /* font-size: 16px; */
+    /* text-align: center; */
+    /* 原本的淡色系 */
+    /* background-color: rgb(122, 162, 238); */
+    color:White;
+    background-color:rgb(155, 115, 0)
+    ;
+    font-weight:bold;
+}
+#licence td textarea {
+    height: 100%; /*高度填充*/
+    width: 100%;
+    padding: 1; /*防止textarea超過td邊框*/
+    vertical-align: bottom; /*chrome的td有margin-top情況 用此CSS調整*/
+    border: none; /*border用td的*/
+}
+/* 欄位漸層設定 */
+#licence tr:nth-of-type(even) {
+    background-color: #ddd;
+}
+#licence tr:nth-of-type(odd) {
+    background-color: #f3f3f3;
+}
+a {
+    text-decoration: none;
+    color:#0000CC;
+}
+a:hover {
+    /* font-size: 1.05rem; */
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0,0,0,.5);
+}
+/* .btn {
+    font-size: 12px;
+    padding: 2px 2px;
+    margin: 5px;
+} */
+.box {
+    box-sizing: border-box; /*老師推薦用法，寬度自動算，完全不用自己算*/
+    /* width: calc(100%/2);    老師推薦用法，總長除以等份，完全不用自己算 */
+    text-align: center;
+    /* display: inline-block; */
+    display: inline-flex;
+    /* background-color: #fffc4a; */
+    /* font-size: 16px; */
+    vertical-align: top;        /*div框向上對齊*/
+    /* top, middle, bottom, baseline */
+    margin: 5px;
+    padding: 5px;               /*div框的內距，為了不讓兩框文字相連*/
+}
+.submit {
+    vertical-align: bottom;        /*div框向上對齊*/
+}
+
+/* @import './reset.css'; */
+/* reset先不要 */
+.menu {
+    /* height: 100vh; */
+    /* width: 300px; */
+    /* width: 20%; */
+    /* background-color: #7C7C7C; */
+    background-color: #ECECFF;
+    float: left;
+}
+/* .menu_li { */
+    /* line-height: 35px; */
+    /* height: 100px; */
+/* } */
+.content {
+    /* height: 100vh; */
+    /* width: 100%; */
+    width: 100vw;
+    /* background-color: rgb(226, 129, 129); */
+    /* background-color: #ECECFF; */
+}
+/* 上面是新引入的 */
+
+.article {
+    background-color: white;
+}
+
+#gotop {
+    width: 30px;
+    height: 30px;
+    /* background-color: #222; */
+    background-color: #0DCAF0;
+    color: #fff;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999; /* 把top設在最高層 */
+    /* opacity: .6;
+    /* transition: .3s; */ /*       透明度影響美觀，所以老師關掉 */
+}
+
+/* footer {
+    background-color: var(--dark);
+    color: var(--light);
+} */
+
+body{
+    margin:0;
+    font-family:var(--bs-font-sans-serif);
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.5;
+    color:#212529;
+    background-image: 
+        linear-gradient(rgba(245, 240, 180, 0.8),rgba(245, 240, 180, 0.2)),
+        url('../css/picture/IMG_0102.jpg');
+    
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color:rgb(240, 230, 140); */
+    -webkit-text-size-adjust:100%;
+    -webkit-tap-highlight-color:transparent
+}
+
+nav.bg-info { 
+    background-image:rgba(245, 240, 180, 0.9);
+    background-color: rgba(255,255,255,0)!important;
+}
+
+nav.navbar-light .navbar-brand{
+    color:rgba(15, 25, 115, 0.9)
+    /* color:rgba(0,0,255,1) */
+}
+nav.navbar-light .navbar-brand:focus,.navbar-light .navbar-brand:hover{
+    color:rgba(15, 25, 115, 0.9)
+    /* color:rgba(0,0,255,1) */
+}
+nav.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color:rgba(15, 25, 115, 0.9);
+}
+
+ul.dropdown-menu-dark {
+    color: rgba(15, 25, 115, 0.9);
+    background-color: rgb(221, 191, 137);
+    border-color: rgba(0, 0, 0, .15);
+}
+
+ul.dropdown-menu-dark .dropdown-item {
+    color: rgba(15, 25, 115, 0.9);
+}

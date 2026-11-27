@@ -1,0 +1,13 @@
+{
+    "tableName": "heatTemper",
+    "date": "2026-11-27",
+    "predictCheck": "On",
+    "first": {
+        "check": "On",
+        "send": ""
+    },
+    "second": {
+        "check": "On",
+        "send": ""
+    }
+}
